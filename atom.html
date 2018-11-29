@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="stilark1.css">
+    <meta charset="utf-8">
+
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="samhandling.html">Samhandling i GitHub</a></li>
+        <li><a href="">Side</a></li>
+        <li><a href="visualstudio.html">Visual Studio</a></li>
+        <li><a class="active" href="atom.html">Atom</a></li>
+    </ul>
+    <div class="brodtekst">
+        <h1>GitHub-opplæringspakke</h1>
+        <h2>Atom</h2>
+        I denne leksjonen skal vise hvordan vi setter opp og bruker GitHub i Atom.io for et gruppeprosjekt der vi lager en nettside.
+        <h3>Installasjon av Atom</h3>
+        Hvis du ikke har Atom installert allerede kan du følge denne korte instruksen på hvordan man setter opp utviklingsmiljøet. ingen video her fordi Atom.io har automatisk støtte for GitHub.
+        <ol>
+            <li>Last ned Atom trygt herfra: <a href="https://atom.io/">https://atom.io/</a></li>
+            <li>Kryss av for eventuelle tilleggsinnstillinger du ønsker deg når du installerer</li>
+            <li>Start og fullfør installasjonen.</li>
+        </ol>
+
+        <h3>Koble Atom til GitHub</h3>
+        Hvis du allerede har Atom installert på maskinen din kan du følge denne guiden for å begynne å ta i bruk GitHub:
+        <ol>
+            <li>Åpne atom.io</li>
+            <li>På tastaturet hold ctrl-shift-p og skriv git</li>
+            <li>Finn kommandoen som heter "GitHub: clone"  og klikk den</li>
+            <li>Her skriver/limer du inn lenken til ditt git-repository og trykker "clone", merk at du bare trenger klikke en gang, så vil repositoriet vises til venstre under prosjektfanen.</li>
+            <li>For å få tilgang til å endre repositoriet, må du autoriseres.<br>
+              Følger du denne <a href="GitHub.atom.io/login">lenken</a> vil GitHub vanligvis be deg om et passord.
+            </li>
+            <li>Skriv passordet ditt og trykk deg videre</li>
+            <li>De vil så gi deg en såkalt "GitHub token", som er det du trenger for å autoriseres her, så lim den inn i GitHub-fanen her, så skal alt virke. Denne  fanen åpner du ved å holde ctrl-8. git-fanen åpner du ved å holde ctrl-9</li>
+                    <video controls width="50%"><source src = "AtomVideo\setup.mp4" /></video>
+        </ol>
+
+        <h3>Comitte endringer</h3>
+        Når du er ferdig med å gjøre endringer på prosjektet ditt må du comitte endringer for at andre på gruppen skal kunne se dem. Dette kan gjøres på to måter i Atom. Teksten og videoene under forklarer deg hvordan du går frem for å gjøre dette:
+        <h4>for å committe alle filene du har endret:</h4>
+        <ol>
+            <li>Trykk på "Stage All" i Git-fanen</li>
+            <li>Skriv en commit melding</li>
+            <li>Trykk "Commit to 'branchnavn'"</li>
+            <li>Merk at hvis dette skal virke, må du være på den nyeste versjonen av din "branch". Trykk på knappen ved siden av ditt "branchnavn" i den nederste menyen. På knappen står det enten "fetch, pull, eller push", du vil i dette tilfellet ha fetch.</li>
+            <!--<li>Skriv en commit melding om hva du har endret</li>
+            <li>Velg filer eller trykk "Commit All"</li>
+            <li>Trykk "Sync" eller gå inn på sync tabben fra "Home" siden til GitHub Repoet</li>
+            <li>Trykk "Sync" for å synkronisere endringene dine med resten av gruppen din</li>-->
+        </ol>
+        <video controls width="50%"><source src = "AtomVideo\AtomCommitOne.mp4" /></video>
+        <h4>Committe en fil eller deler av en fil du har endret, så pushe/pulle, og merge dersom det er nyere versjoner å ta hensyn til.</h4>
+        <ol>
+            <li>trykk på filen i git-fanen</li>
+            <li>sjekk at endringene er slik du vil ha dem</li>
+            <li>Marker delen av filen du vil stage, eller stage hele filen</li>
+            <li>skriv en commit melding</li>
+            <li>høyreklikk på fetch/pull/push knappen, og trykk pull</li>
+            <li>løs konflikter i versjonene</li>
+            <li>stage den nå sammensatte fila</li>
+            <li>skriv en commit melding, eller la den automatiske stå</li>
+            <li>trykk commit</li>
+            <li>høyreklikk på fetch/pull/push knappen og velg push</li>
+            <li>dersom det nå ikke oppstår noen feil, skal det ha virket. Sjekk gjerne online.</li>
+        </ol>
+        <video controls width="50%"><source src = "AtomVideo\stage-push-merge.mp4" /></video>
+        <div>
+</body>
+</html>
